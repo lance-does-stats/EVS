@@ -22,8 +22,8 @@ sample.cont <- function(y,qntl){
   y2 = quantile(y,q2)
 
   # extreme value sampling design
-  data = data.frame(x)
-  ok = which(data$x>y2|data$x<y1)
+  data = data.frame(y)
+  ok = which(data$y>y2|data$y<y1)
   data.mat = as.matrix(data[ok,])
 
   return(data.mat)
